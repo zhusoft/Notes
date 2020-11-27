@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Notes.DateSelect">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="请选择日期：" />
+            <DatePicker MinimumDate="2020-01-01" MaximumDate="2021-12-31" Format="yyyy-MM-dd"/>
+            <Label Text="请选择时间：" />
+            <TimePicker Time="12:00" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="赛里木湖是大西洋最后一滴眼泪"></Span>
+                        <Span Text="塔克拉玛干沙漠是中国最大的沙漠" FontAttributes="Italic"></Span>
+                        <Span Text="神的自留地，上帝的后花园" TextDecorations="Underline"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
